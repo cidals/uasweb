@@ -1,0 +1,246 @@
+<?
+include "include/koneksi.php";
+$perintah = "select * from link where publish =1";
+$kueri =mysql_query($perintah);
+
+$perintah2 ="select *from mmenu where pubish=1";
+$kueri2 =mysql_query($perintah2) or die (mysql_error());
+?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>.: SUPM N Kota Agung :.</title>
+<style type="text/css">
+<!--
+.style1 {color: #00FF00}
+.style2 {color: #00FF00}
+.style3 {font-size: 10px}
+.style4 {font-size: 12px}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+a:active {
+	text-decoration: none;
+}
+.style6 {
+	font-size: 18;
+	color: #000000;
+}
+body {
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 80px;
+	margin-bottom: 80px;
+	background-color: #5C5C5C;
+	background-image: url();
+}
+.style10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style11 {
+	font-size: 18px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style15 {color: #FFFFFF}
+.style17 {color: #000000; }
+.style26 {color: #333333}
+.style27 {font-size: 14px}
+.style28 {font-size: 14px; color: #000000; }
+.style29 {color: #333333; font-weight: bold; font-size: 14px; }
+.style30 {color: #000000; font-weight: bold; font-size: 14px; }
+.style31 {
+	font-family: "Courier New", Courier, mono;
+	font-size: 14px;
+}
+.style33 {color: #000000; font-weight: bold; font-size: 20px; }
+.style35 {font-size: 19px; font-weight: bold; color: #000000; }
+.style36 {font-size: 36px}
+.style38 {font-family: Arial, Helvetica, sans-serif; font-size: 2px; color: #CCCCCC; }
+-->
+</style>
+</head>
+
+<body>
+<table width="25%" height="1075"  border="0"  align="center" bgcolor="#FFFFFF" style="border:1px solid  	#FFFF00;">
+  <tr bgcolor="#3F7F9A">
+    <td height="34" colspan="3"><img src="images/11header-1.jpg" width="1122" height="158"></td>
+  </tr>
+  <tr bgcolor="#3F7F9A">
+    <td height="4" colspan="3"><span class="style1"> <span class="style2"> <span class="style3"> <span class="style4"> <span class="style26"> <span class="style31">
+      <marquee direction="left" behavior="scroll" scrollamount="2" scrolldelay="60">
+      <strong>.:: <strong>JL.ZA. PAGAR ALAM NO 7 GEDONG MENENG RAJABASA BANDAR LAMPUNG </strong> ::.</strong>
+      </marquee>
+    </span> </span> </span> </span> </span> </span> </td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td height="13" colspan="3"><div align="right"><span class="style38">.
+    </span> </div></td>
+  </tr>
+  <tr>
+    <td width="166" height="600" rowspan="3" bgcolor="#ECE9D8" valign="top">
+	<table width="166" height="854"  border="0" bordercolor="#E8E9EF" bgcolor="#ECE9D8">
+        <tr align="center" bordercolor="#CCCCCC" bgcolor="#4A8691">
+          <td height="38" colspan="5" class="style15"><div align="center" class="style33">:: MENU KHUSUS :: </div></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="2"></td>
+          <td height="2" colspan="4"></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td width="37" height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="home.php" target="kanan" class="style6">Utama Bangat</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px; border-bottom:1px solid #FFF;"><span class="style29"><a href="visimisi.php" target="kanan" class="style17">Visi dan Misi</a> </span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="sejarah.php" target="kanan" class="style17">Sejarah singkat</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="profil.php" target="kanan" class="style17">Profil</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="folder_geleri.php" target="kanan" class="style17">Galleri</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="fasilitas.php" target="kanan" class="style17">Fasilitas</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="ekstrakurikuler.php" target="kanan" class="style17">Ekstrakurikuler</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="berita.php" target="kanan" class="style17">Berita / Info </a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="kontak.php" target="kanan" class="style17">Kontak</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="41" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style29"><a href="struktur_organisasi.php" target="kanan" class="style17">Struktur Orgasnisasi</a></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#4A8691">
+          <td height="39" colspan="5" align="center"><span class="style33">:: Jurusan ::</span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style27"><strong><a href="tbp.php" target="kanan" class="style28">IPA</a></strong></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC">
+          <td height="34" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><span class="style27"><strong><a href="npl.php" target="kanan" class="style6 style27">IPS</a></strong></span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="10" colspan="5"></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#4A8691">
+          <td height="34" colspan="5" align="center"><span class="style33">:: Menu Data :: </span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="5" colspan="5" align="center"></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+          <td height="24" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><a href="guru.php" target="kanan" class="style30">Data Guru </a></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="24" align="center"><img src="images/usersfolder.gif" align="absmiddle" /></td>
+          <td colspan="4" style="padding-bottom:5px ; border-bottom:1px solid #FFF;"><a href="siswa.php" target="kanan" class="style30">Data Siswa </a></td>
+        </tr>
+        </tr
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="9" colspan="5" align="center"></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#4A8691">
+          <td height="31" colspan="5" align="center"><span class="style33">:: Links :: </span></td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="16" align="center"><div align="left"></div></td>
+          <td width="23" height="16" align="center"><? while($row=mysql_fetch_row($kueri))
+			{
+            echo "<a href='$row[2]' target='_blank' class='style9'>$row[1]</a><br />";
+            }
+			?>
+          <div align="left"></div></td>
+          <td width="29" align="center"><div align="left"></div></td>
+          <td width="43" align="center"><div align="left"></div></td>
+          <td width="8" align="center">&nbsp;</td>
+        </tr>
+        <tr bordercolor="#CCCCCC" bgcolor="#ECE9D8">
+          <td height="9" colspan="5" align="center">&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+   <td width="842" height="844" valign="top" bgcolor="#FFFFFF"><iframe src="kanan.php" marginheight="10" marginwidth="10" height="900" width="740" name="kanan" /></iframe></td>
+   <td width="284" rowspan="2" valign="top" bgcolor="#ECE9D8"><table width="167"  border="0" bgcolor="#ECE9D8">
+     <tr bgcolor="#FFFFFF">
+       <td height="13" colspan="2"><div align="center"><span class="style36">
+         <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="81" height="39" >
+           <param name="movie" value="images/DigiClock.swf">
+           <param name="quality" value="high">
+           <param name="BGCOLOR" value="#FFFFFF">
+           <embed src="images/DigiClock.swf" width="81" height="39" align="middle" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" bgcolor="#FFFFFF"></embed>
+         </object>
+       </span></div></td>
+     </tr>
+     <tr bgcolor="#4A8691">
+       <td height="14" colspan="2"><div align="center"><span class="style35">:: Kalender :: </span></div></td>
+     </tr>
+     <tr bgcolor="#ECE9D8">
+       <td colspan="2"><div align="center" class="style11">
+         <? include "include/kalender.php" ?>
+       </div></td>
+     </tr>
+     <tr bgcolor="#4A8691">
+       <td height="27" colspan="2"><div align="center" class="style35">:: Pooling :: </div></td>
+     </tr>
+     <tr bgcolor="#ECE9D8">
+       <td colspan="2"><? include "pooling.php" ?></td>
+     </tr>
+     <tr bgcolor="#ECE9D8">
+       <td colspan="2"><style> 
+.google_translate img { 
+filter:alpha(opacity=100); 
+-moz-opacity: 1.0; 
+opacity: 1.0; 
+border:0; 
+} 
+.google_translate:hover img { 
+filter:alpha(opacity=30); 
+-moz-opacity: 0.30; 
+opacity: 0.30; 
+border:0; 
+} 
+.google_translatextra:hover img { 
+filter:alpha(opacity=0.30); 
+-moz-opacity: 0.30; 
+opacity: 0.30; 
+border:0; 
+} 
+                     </style></td>
+     </tr>
+     <tr bgcolor="#ECE9D8">
+       <td colspan="2">&nbsp;</td>
+     </tr>
+     
+</table>
+<div align="center"></div>
+</body>
+</html>
